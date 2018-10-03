@@ -1,0 +1,26 @@
+AMM-L (Analogous Mechanism Model of a Lobule) coupled ODE
+
+The intention is to build a Lobule analog in a paradigm that is more likely to be better understood, criticized, and perhaps reused by the ADME community.  The proposal consists of 6 hypothetical reactor compartments in series, from PV→CV.  Each compartment should be mappable to a component of the ISLj Lobule analog.  The intra-Lobular compartments should map to dPV and dCV bands and both analogs should be tunable to match the other such that the whole analogs can be tested against referent data.
+
+Tools:
+
+It would be best to write this in a tool compatable/callable from the ISLj to support replacability (e.g. running the ISLj replacing the whole Lobule with the AMML, including PV and CV, and/or replacing the intra-Lobular SSes, but preserving the PV and CV, etc.).
+
+However, the objective of communication with, testability by, and reuse by other ADME modelers, supercedes convenient integration with the ISLj.  Toward that, it would be useful to use SBML rather than directly implementing coupled ODEs in whatever toolkit (Matlab, R, Python, etc.).  Many tools support both the compartment/reaction abstraction *and* direct expression of math like DEs.  This makes an early goal of the project finding an authoring tool that facilitates the construction of the model according to the abstraction, but also allows some flexibility ("ill-formedness") in model construction and iteration.
+
+Here's a list of candidate tools:
+
+COPASI  https://copasi.org
+MOOSE  https://moose.ncbs.res.in/
+Morpheus  https://imc.zih.tu-dresden.de/wiki/morpheus/doku.php?id=start
+SBW  https://sourceforge.net/projects/sbw/
+VCell  https://github.com/virtualcell/vcell
+JSim  https://www.physiome.org/jsim/
+Cytoscape https://www.cytoscape.org
+FERN  https://drupal.bio.ifi.lmu.de/FERN/
+SBSCL  https://draeger-lab.github.io/SBSCL/
+
+The Java-based ones (VCell, JSim, Cytoscape, FERN, and SBSCL) are probably the best.  VCell seems to call out to lots of other libraries, languages, etc., making it a sysadmin problem.  So, perhaps JSim, Cytscape, FERN, and SBSCL are most likely.
+
+2018-10-03 [gepr]: However, preliminary attempts to author a simple multi-compartment model and export well-formed SBML consumable by the other tools in the list were unsuccessful.  Success was found by authoring and executing a 3 compartment Liver analog (compartments: Central, L1, Clearance) in COPASI.  That model was also successfully exported to SBML and imported into JSim and executed.
+
