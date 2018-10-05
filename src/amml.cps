@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- generated with COPASI 4.24 (Build 197) (http://www.copasi.org) at 2018-10-03 16:48:05 UTC -->
+<!-- generated with COPASI 4.24 (Build 197) (http://www.copasi.org) at 2018-10-05 19:26:36 UTC -->
 <?oxygen RNGSchema="http://www.copasi.org/static/schema/CopasiML.rng" type="xml"?>
 <COPASI xmlns="http://www.copasi.org/static/schema" versionMajor="4" versionMinor="24" versionDevel="197" copasiSourcesModified="0">
   <ListOfFunctions>
@@ -61,25 +61,11 @@ Reaction scheme where the products are created from the reactants and the change
 
     </MiriamAnnotation>
     <ListOfCompartments>
-      <Compartment key="Compartment_0" name="L1" simulationType="ode" dimensionality="3" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Compartment_0">
-    <dcterms:created>
-      <rdf:Description>
-        <dcterms:W3CDTF>2018-10-02T16:21:10Z</dcterms:W3CDTF>
-      </rdf:Description>
-    </dcterms:created>
-  </rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
-        <Expression>
-          &lt;CN=Root,Model=AMML,Vector=Values[fbCLint],Reference=InitialValue>/(&lt;CN=Root,Model=AMML,Vector=Values[SFkp],Reference=InitialValue>*&lt;CN=Root,Model=AMML,Vector=Values[Kpl],Reference=InitialValue>)
-        </Expression>
-      </Compartment>
       <Compartment key="Compartment_1" name="C" simulationType="assignment" dimensionality="3" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Compartment_1">
     <dcterms:created>
       <rdf:Description>
@@ -88,6 +74,7 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
+
         </MiriamAnnotation>
         <Expression>
           1
@@ -95,7 +82,9 @@ Reaction scheme where the products are created from the reactants and the change
       </Compartment>
       <Compartment key="Compartment_2" name="CL" simulationType="assignment" dimensionality="3" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Compartment_2">
     <dcterms:created>
       <rdf:Description>
@@ -104,16 +93,114 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
+
         </MiriamAnnotation>
         <Expression>
           1
+        </Expression>
+      </Compartment>
+      <Compartment key="Compartment_4" name="L2" simulationType="ode" dimensionality="3" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Compartment_4">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2018-10-05T10:11:28Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+
+        </MiriamAnnotation>
+        <Expression>
+          &lt;CN=Root,Model=AMML,Vector=Values[clearrate],Reference=Value>
+        </Expression>
+      </Compartment>
+      <Compartment key="Compartment_5" name="L3" simulationType="ode" dimensionality="3" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Compartment_5">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2018-10-05T09:36:55Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+
+        </MiriamAnnotation>
+        <Expression>
+          &lt;CN=Root,Model=AMML,Vector=Values[clearrate],Reference=Value>
+        </Expression>
+      </Compartment>
+      <Compartment key="Compartment_6" name="CV" simulationType="assignment" dimensionality="3" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Compartment_6">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2018-10-05T09:36:58Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+
+        </MiriamAnnotation>
+        <Expression>
+          &lt;CN=Root,Model=AMML,Vector=Values[lob_flow],Reference=Value>
+        </Expression>
+      </Compartment>
+      <Compartment key="Compartment_0" name="L1" simulationType="ode" dimensionality="3" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Compartment_0">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2018-10-05T10:11:28Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+
+        </MiriamAnnotation>
+        <Expression>
+          &lt;CN=Root,Model=AMML,Vector=Values[clearrate],Reference=Value>
+        </Expression>
+      </Compartment>
+      <Compartment key="Compartment_3" name="PV" simulationType="assignment" dimensionality="3" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Compartment_3">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2018-10-05T10:40:26Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+
+        </MiriamAnnotation>
+        <Expression>
+          &lt;CN=Root,Model=AMML,Vector=Values[Qpv],Reference=Value>
         </Expression>
       </Compartment>
     </ListOfCompartments>
     <ListOfMetabolites>
       <Metabolite key="Metabolite_0" name="vC_L1" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_0">
     <dcterms:created>
       <rdf:Description>
@@ -122,11 +209,14 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
+
         </MiriamAnnotation>
       </Metabolite>
       <Metabolite key="Metabolite_1" name="vCCL" simulationType="reactions" compartment="Compartment_2" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_1">
     <dcterms:created>
       <rdf:Description>
@@ -135,11 +225,14 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
+
         </MiriamAnnotation>
       </Metabolite>
       <Metabolite key="Metabolite_2" name="vCC" simulationType="reactions" compartment="Compartment_1" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Metabolite_2">
     <dcterms:created>
       <rdf:Description>
@@ -148,11 +241,90 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
+
+        </MiriamAnnotation>
+      </Metabolite>
+      <Metabolite key="Metabolite_3" name="vC_PV" simulationType="reactions" compartment="Compartment_3" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Metabolite_3">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2018-10-05T09:59:53Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+
+        </MiriamAnnotation>
+      </Metabolite>
+      <Metabolite key="Metabolite_4" name="vC_L2" simulationType="reactions" compartment="Compartment_4" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Metabolite_4">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2018-10-05T10:39:33Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+
+        </MiriamAnnotation>
+      </Metabolite>
+      <Metabolite key="Metabolite_5" name="vC_L3" simulationType="reactions" compartment="Compartment_5" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Metabolite_5">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2018-10-05T10:24:29Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+
+        </MiriamAnnotation>
+      </Metabolite>
+      <Metabolite key="Metabolite_6" name="vC_CV" simulationType="reactions" compartment="Compartment_6" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Metabolite_6">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2018-10-05T09:59:42Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+
         </MiriamAnnotation>
       </Metabolite>
     </ListOfMetabolites>
     <ListOfModelValues>
       <ModelValue key="ModelValue_0" name="fbCLint" simulationType="fixed" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#ModelValue_0">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2018-10-05T09:33:48Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+
+        </MiriamAnnotation>
       </ModelValue>
       <ModelValue key="ModelValue_1" name="SFkp" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
@@ -168,8 +340,36 @@ Reaction scheme where the products are created from the reactants and the change
         </MiriamAnnotation>
       </ModelValue>
       <ModelValue key="ModelValue_2" name="Kpl" simulationType="fixed" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#ModelValue_2">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2018-10-05T10:04:51Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+
+        </MiriamAnnotation>
       </ModelValue>
       <ModelValue key="ModelValue_3" name="Qh" simulationType="fixed" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#ModelValue_3">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2018-10-05T09:28:30Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+
+        </MiriamAnnotation>
       </ModelValue>
       <ModelValue key="ModelValue_4" name="Qha" simulationType="fixed" addNoise="false">
       </ModelValue>
@@ -188,7 +388,9 @@ Reaction scheme where the products are created from the reactants and the change
       </ModelValue>
       <ModelValue key="ModelValue_6" name="clearrate" simulationType="assignment" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_6">
     <dcterms:created>
       <rdf:Description>
@@ -197,15 +399,18 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
+
         </MiriamAnnotation>
         <Expression>
           &lt;CN=Root,Model=AMML,Vector=Values[fbCLint],Reference=InitialValue>/(&lt;CN=Root,Model=AMML,Vector=Values[SFkp],Reference=InitialValue>*&lt;CN=Root,Model=AMML,Vector=Values[Kpl],Reference=InitialValue>)
         </Expression>
       </ModelValue>
-      <ModelValue key="ModelValue_7" name="L1toC" simulationType="assignment" addNoise="false">
+      <ModelValue key="ModelValue_10" name="lob_flow" simulationType="assignment" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#ModelValue_7">
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#ModelValue_10">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2018-10-02T16:45:37Z</dcterms:W3CDTF>
@@ -213,32 +418,19 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
+
         </MiriamAnnotation>
         <Expression>
           &lt;CN=Root,Model=AMML,Vector=Values[Qh],Reference=InitialValue>/(&lt;CN=Root,Model=AMML,Vector=Values[SFkp],Reference=InitialValue>*&lt;CN=Root,Model=AMML,Vector=Values[Kpl],Reference=InitialValue>)
         </Expression>
       </ModelValue>
-      <ModelValue key="ModelValue_8" name="CtoL1" simulationType="assignment" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#ModelValue_8">
-    <dcterms:created>
-      <rdf:Description>
-        <dcterms:W3CDTF>2018-10-02T16:47:40Z</dcterms:W3CDTF>
-      </rdf:Description>
-    </dcterms:created>
-  </rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
-        <Expression>
-          &lt;CN=Root,Model=AMML,Vector=Values[Qha],Reference=InitialValue>+&lt;CN=Root,Model=AMML,Vector=Values[Qpv],Reference=InitialValue>
-        </Expression>
-      </ModelValue>
     </ListOfModelValues>
     <ListOfReactions>
-      <Reaction key="Reaction_0" name="clear" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_0" name="clear_L1" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_0">
     <dcterms:created>
       <rdf:Description>
@@ -247,6 +439,7 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
+
         </MiriamAnnotation>
         <ListOfSubstrates>
           <Substrate metabolite="Metabolite_0" stoichiometry="1"/>
@@ -255,7 +448,7 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_1" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_5051" name="k1" value="23.3333"/>
+          <Constant key="Parameter_5055" name="k1" value="23.3333"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default">
           <ListOfCallParameters>
@@ -268,9 +461,11 @@ Reaction scheme where the products are created from the reactants and the change
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_1" name="L1r" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_1" name="PVtoL1" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_1">
     <dcterms:created>
       <rdf:Description>
@@ -279,30 +474,33 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
+
         </MiriamAnnotation>
         <ListOfSubstrates>
-          <Substrate metabolite="Metabolite_2" stoichiometry="1"/>
+          <Substrate metabolite="Metabolite_3" stoichiometry="1"/>
         </ListOfSubstrates>
         <ListOfProducts>
           <Product metabolite="Metabolite_0" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_5053" name="k1" value="0.2"/>
+          <Constant key="Parameter_5057" name="k1" value="0.1"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_80">
-              <SourceParameter reference="ModelValue_8"/>
+              <SourceParameter reference="ModelValue_5"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Metabolite_2"/>
+              <SourceParameter reference="Metabolite_3"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_2" name="Cr" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_2" name="CVtoC" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Reaction_2">
     <dcterms:created>
       <rdf:Description>
@@ -311,23 +509,269 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
+
         </MiriamAnnotation>
         <ListOfSubstrates>
-          <Substrate metabolite="Metabolite_0" stoichiometry="1"/>
+          <Substrate metabolite="Metabolite_6" stoichiometry="1"/>
         </ListOfSubstrates>
         <ListOfProducts>
           <Product metabolite="Metabolite_2" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_5054" name="k1" value="4.97512"/>
+          <Constant key="Parameter_5058" name="k1" value="0.1"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_80">
-              <SourceParameter reference="ModelValue_7"/>
+              <SourceParameter reference="ModelValue_3"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_81">
+              <SourceParameter reference="Metabolite_6"/>
+            </CallParameter>
+          </ListOfCallParameters>
+        </KineticLaw>
+      </Reaction>
+      <Reaction key="Reaction_3" name="clear_L2" reversible="false" fast="false" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Reaction_3">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2018-10-05T10:10:18Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+
+        </MiriamAnnotation>
+        <ListOfSubstrates>
+          <Substrate metabolite="Metabolite_4" stoichiometry="1"/>
+        </ListOfSubstrates>
+        <ListOfProducts>
+          <Product metabolite="Metabolite_1" stoichiometry="1"/>
+        </ListOfProducts>
+        <ListOfConstants>
+          <Constant key="Parameter_4885" name="k1" value="23.3333"/>
+        </ListOfConstants>
+        <KineticLaw function="Function_13" unitType="Default">
+          <ListOfCallParameters>
+            <CallParameter functionParameter="FunctionParameter_80">
+              <SourceParameter reference="ModelValue_6"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_81">
+              <SourceParameter reference="Metabolite_4"/>
+            </CallParameter>
+          </ListOfCallParameters>
+        </KineticLaw>
+      </Reaction>
+      <Reaction key="Reaction_4" name="clear_L3" reversible="false" fast="false" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Reaction_4">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2018-10-05T10:10:13Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+
+        </MiriamAnnotation>
+        <ListOfSubstrates>
+          <Substrate metabolite="Metabolite_5" stoichiometry="1"/>
+        </ListOfSubstrates>
+        <ListOfProducts>
+          <Product metabolite="Metabolite_1" stoichiometry="1"/>
+        </ListOfProducts>
+        <ListOfConstants>
+          <Constant key="Parameter_4920" name="k1" value="23.3333"/>
+        </ListOfConstants>
+        <KineticLaw function="Function_13" unitType="Default">
+          <ListOfCallParameters>
+            <CallParameter functionParameter="FunctionParameter_80">
+              <SourceParameter reference="ModelValue_6"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_81">
+              <SourceParameter reference="Metabolite_5"/>
+            </CallParameter>
+          </ListOfCallParameters>
+        </KineticLaw>
+      </Reaction>
+      <Reaction key="Reaction_5" name="CtoPV" reversible="false" fast="false" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Reaction_5">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2018-10-05T10:01:53Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+
+        </MiriamAnnotation>
+        <ListOfSubstrates>
+          <Substrate metabolite="Metabolite_2" stoichiometry="1"/>
+        </ListOfSubstrates>
+        <ListOfProducts>
+          <Product metabolite="Metabolite_3" stoichiometry="1"/>
+        </ListOfProducts>
+        <ListOfConstants>
+          <Constant key="Parameter_4922" name="k1" value="0.1"/>
+        </ListOfConstants>
+        <KineticLaw function="Function_13" unitType="Default">
+          <ListOfCallParameters>
+            <CallParameter functionParameter="FunctionParameter_80">
+              <SourceParameter reference="ModelValue_5"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_81">
+              <SourceParameter reference="Metabolite_2"/>
+            </CallParameter>
+          </ListOfCallParameters>
+        </KineticLaw>
+      </Reaction>
+      <Reaction key="Reaction_6" name="L3toCV" reversible="false" fast="false" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Reaction_6">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2018-10-05T10:02:53Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+
+        </MiriamAnnotation>
+        <ListOfSubstrates>
+          <Substrate metabolite="Metabolite_5" stoichiometry="1"/>
+        </ListOfSubstrates>
+        <ListOfProducts>
+          <Product metabolite="Metabolite_6" stoichiometry="1"/>
+        </ListOfProducts>
+        <ListOfConstants>
+          <Constant key="Parameter_4923" name="k1" value="4.97512"/>
+        </ListOfConstants>
+        <KineticLaw function="Function_13" unitType="Default">
+          <ListOfCallParameters>
+            <CallParameter functionParameter="FunctionParameter_80">
+              <SourceParameter reference="ModelValue_10"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_81">
+              <SourceParameter reference="Metabolite_5"/>
+            </CallParameter>
+          </ListOfCallParameters>
+        </KineticLaw>
+      </Reaction>
+      <Reaction key="Reaction_7" name="L1toL2" reversible="false" fast="false" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Reaction_7">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2018-10-05T10:26:58Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+
+        </MiriamAnnotation>
+        <ListOfSubstrates>
+          <Substrate metabolite="Metabolite_0" stoichiometry="1"/>
+        </ListOfSubstrates>
+        <ListOfProducts>
+          <Product metabolite="Metabolite_4" stoichiometry="1"/>
+        </ListOfProducts>
+        <ListOfConstants>
+          <Constant key="Parameter_4717" name="k1" value="4.97512"/>
+        </ListOfConstants>
+        <KineticLaw function="Function_13" unitType="Default">
+          <ListOfCallParameters>
+            <CallParameter functionParameter="FunctionParameter_80">
+              <SourceParameter reference="ModelValue_10"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_81">
               <SourceParameter reference="Metabolite_0"/>
+            </CallParameter>
+          </ListOfCallParameters>
+        </KineticLaw>
+      </Reaction>
+      <Reaction key="Reaction_8" name="L2toL3" reversible="false" fast="false" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Reaction_8">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2018-10-05T10:27:05Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+
+        </MiriamAnnotation>
+        <ListOfSubstrates>
+          <Substrate metabolite="Metabolite_4" stoichiometry="1"/>
+        </ListOfSubstrates>
+        <ListOfProducts>
+          <Product metabolite="Metabolite_5" stoichiometry="1"/>
+        </ListOfProducts>
+        <ListOfConstants>
+          <Constant key="Parameter_4768" name="k1" value="4.97512"/>
+        </ListOfConstants>
+        <KineticLaw function="Function_13" unitType="Default">
+          <ListOfCallParameters>
+            <CallParameter functionParameter="FunctionParameter_80">
+              <SourceParameter reference="ModelValue_10"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_81">
+              <SourceParameter reference="Metabolite_4"/>
+            </CallParameter>
+          </ListOfCallParameters>
+        </KineticLaw>
+      </Reaction>
+      <Reaction key="Reaction_9" name="CtoL1" reversible="false" fast="false" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Reaction_9">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2018-10-05T10:36:20Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+
+        </MiriamAnnotation>
+        <ListOfSubstrates>
+          <Substrate metabolite="Metabolite_2" stoichiometry="1"/>
+        </ListOfSubstrates>
+        <ListOfProducts>
+          <Product metabolite="Metabolite_0" stoichiometry="1"/>
+        </ListOfProducts>
+        <ListOfConstants>
+          <Constant key="Parameter_4780" name="k1" value="0.1"/>
+        </ListOfConstants>
+        <KineticLaw function="Function_13" unitType="Default">
+          <ListOfCallParameters>
+            <CallParameter functionParameter="FunctionParameter_80">
+              <SourceParameter reference="ModelValue_4"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_81">
+              <SourceParameter reference="Metabolite_2"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
@@ -339,14 +783,22 @@ Reaction scheme where the products are created from the reactants and the change
           <ModelParameter cn="CN=Root,Model=AMML" value="0" type="Model" simulationType="time"/>
         </ModelParameterGroup>
         <ModelParameterGroup cn="String=Initial Compartment Sizes" type="Group">
-          <ModelParameter cn="CN=Root,Model=AMML,Vector=Compartments[L1]" value="1" type="Compartment" simulationType="ode"/>
           <ModelParameter cn="CN=Root,Model=AMML,Vector=Compartments[C]" value="1" type="Compartment" simulationType="assignment"/>
           <ModelParameter cn="CN=Root,Model=AMML,Vector=Compartments[CL]" value="1" type="Compartment" simulationType="assignment"/>
+          <ModelParameter cn="CN=Root,Model=AMML,Vector=Compartments[L2]" value="1" type="Compartment" simulationType="ode"/>
+          <ModelParameter cn="CN=Root,Model=AMML,Vector=Compartments[L3]" value="1" type="Compartment" simulationType="ode"/>
+          <ModelParameter cn="CN=Root,Model=AMML,Vector=Compartments[CV]" value="4.9751243781094523" type="Compartment" simulationType="assignment"/>
+          <ModelParameter cn="CN=Root,Model=AMML,Vector=Compartments[L1]" value="1" type="Compartment" simulationType="ode"/>
+          <ModelParameter cn="CN=Root,Model=AMML,Vector=Compartments[PV]" value="0.10000000000000001" type="Compartment" simulationType="assignment"/>
         </ModelParameterGroup>
         <ModelParameterGroup cn="String=Initial Species Values" type="Group">
           <ModelParameter cn="CN=Root,Model=AMML,Vector=Compartments[L1],Vector=Metabolites[vC_L1]" value="0" type="Species" simulationType="reactions"/>
           <ModelParameter cn="CN=Root,Model=AMML,Vector=Compartments[CL],Vector=Metabolites[vCCL]" value="0" type="Species" simulationType="reactions"/>
           <ModelParameter cn="CN=Root,Model=AMML,Vector=Compartments[C],Vector=Metabolites[vCC]" value="3.0110704285000002e+21" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=AMML,Vector=Compartments[PV],Vector=Metabolites[vC_PV]" value="0" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=AMML,Vector=Compartments[L2],Vector=Metabolites[vC_L2]" value="0" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=AMML,Vector=Compartments[L3],Vector=Metabolites[vC_L3]" value="0" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=AMML,Vector=Compartments[CV],Vector=Metabolites[vC_CV]" value="0" type="Species" simulationType="reactions"/>
         </ModelParameterGroup>
         <ModelParameterGroup cn="String=Initial Global Quantities" type="Group">
           <ModelParameter cn="CN=Root,Model=AMML,Vector=Values[fbCLint]" value="0.46899999999999997" type="ModelValue" simulationType="fixed"/>
@@ -356,28 +808,76 @@ Reaction scheme where the products are created from the reactants and the change
           <ModelParameter cn="CN=Root,Model=AMML,Vector=Values[Qha]" value="0.10000000000000001" type="ModelValue" simulationType="fixed"/>
           <ModelParameter cn="CN=Root,Model=AMML,Vector=Values[Qpv]" value="0.10000000000000001" type="ModelValue" simulationType="fixed"/>
           <ModelParameter cn="CN=Root,Model=AMML,Vector=Values[clearrate]" value="23.333333333333329" type="ModelValue" simulationType="assignment"/>
-          <ModelParameter cn="CN=Root,Model=AMML,Vector=Values[L1toC]" value="4.9751243781094523" type="ModelValue" simulationType="assignment"/>
-          <ModelParameter cn="CN=Root,Model=AMML,Vector=Values[CtoL1]" value="0.20000000000000001" type="ModelValue" simulationType="assignment"/>
+          <ModelParameter cn="CN=Root,Model=AMML,Vector=Values[lob_flow]" value="4.9751243781094523" type="ModelValue" simulationType="assignment"/>
         </ModelParameterGroup>
         <ModelParameterGroup cn="String=Kinetic Parameters" type="Group">
-          <ModelParameterGroup cn="CN=Root,Model=AMML,Vector=Reactions[clear]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=AMML,Vector=Reactions[clear],ParameterGroup=Parameters,Parameter=k1" value="23.333333333333329" type="ReactionParameter" simulationType="assignment">
+          <ModelParameterGroup cn="CN=Root,Model=AMML,Vector=Reactions[clear_L1]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=AMML,Vector=Reactions[clear_L1],ParameterGroup=Parameters,Parameter=k1" value="23.333333333333329" type="ReactionParameter" simulationType="assignment">
               <InitialExpression>
                 &lt;CN=Root,Model=AMML,Vector=Values[clearrate],Reference=InitialValue>
               </InitialExpression>
             </ModelParameter>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=AMML,Vector=Reactions[L1r]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=AMML,Vector=Reactions[L1r],ParameterGroup=Parameters,Parameter=k1" value="0.20000000000000001" type="ReactionParameter" simulationType="assignment">
+          <ModelParameterGroup cn="CN=Root,Model=AMML,Vector=Reactions[PVtoL1]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=AMML,Vector=Reactions[PVtoL1],ParameterGroup=Parameters,Parameter=k1" value="0.10000000000000001" type="ReactionParameter" simulationType="assignment">
               <InitialExpression>
-                &lt;CN=Root,Model=AMML,Vector=Values[CtoL1],Reference=InitialValue>
+                &lt;CN=Root,Model=AMML,Vector=Values[Qpv],Reference=InitialValue>
               </InitialExpression>
             </ModelParameter>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=AMML,Vector=Reactions[Cr]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=AMML,Vector=Reactions[Cr],ParameterGroup=Parameters,Parameter=k1" value="4.9751243781094523" type="ReactionParameter" simulationType="assignment">
+          <ModelParameterGroup cn="CN=Root,Model=AMML,Vector=Reactions[CVtoC]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=AMML,Vector=Reactions[CVtoC],ParameterGroup=Parameters,Parameter=k1" value="0.10000000000000001" type="ReactionParameter" simulationType="assignment">
               <InitialExpression>
-                &lt;CN=Root,Model=AMML,Vector=Values[L1toC],Reference=InitialValue>
+                &lt;CN=Root,Model=AMML,Vector=Values[Qh],Reference=InitialValue>
+              </InitialExpression>
+            </ModelParameter>
+          </ModelParameterGroup>
+          <ModelParameterGroup cn="CN=Root,Model=AMML,Vector=Reactions[clear_L2]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=AMML,Vector=Reactions[clear_L2],ParameterGroup=Parameters,Parameter=k1" value="23.333333333333329" type="ReactionParameter" simulationType="assignment">
+              <InitialExpression>
+                &lt;CN=Root,Model=AMML,Vector=Values[clearrate],Reference=InitialValue>
+              </InitialExpression>
+            </ModelParameter>
+          </ModelParameterGroup>
+          <ModelParameterGroup cn="CN=Root,Model=AMML,Vector=Reactions[clear_L3]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=AMML,Vector=Reactions[clear_L3],ParameterGroup=Parameters,Parameter=k1" value="23.333333333333329" type="ReactionParameter" simulationType="assignment">
+              <InitialExpression>
+                &lt;CN=Root,Model=AMML,Vector=Values[clearrate],Reference=InitialValue>
+              </InitialExpression>
+            </ModelParameter>
+          </ModelParameterGroup>
+          <ModelParameterGroup cn="CN=Root,Model=AMML,Vector=Reactions[CtoPV]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=AMML,Vector=Reactions[CtoPV],ParameterGroup=Parameters,Parameter=k1" value="0.10000000000000001" type="ReactionParameter" simulationType="assignment">
+              <InitialExpression>
+                &lt;CN=Root,Model=AMML,Vector=Values[Qpv],Reference=InitialValue>
+              </InitialExpression>
+            </ModelParameter>
+          </ModelParameterGroup>
+          <ModelParameterGroup cn="CN=Root,Model=AMML,Vector=Reactions[L3toCV]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=AMML,Vector=Reactions[L3toCV],ParameterGroup=Parameters,Parameter=k1" value="4.9751243781094523" type="ReactionParameter" simulationType="assignment">
+              <InitialExpression>
+                &lt;CN=Root,Model=AMML,Vector=Values[lob_flow],Reference=InitialValue>
+              </InitialExpression>
+            </ModelParameter>
+          </ModelParameterGroup>
+          <ModelParameterGroup cn="CN=Root,Model=AMML,Vector=Reactions[L1toL2]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=AMML,Vector=Reactions[L1toL2],ParameterGroup=Parameters,Parameter=k1" value="4.9751243781094523" type="ReactionParameter" simulationType="assignment">
+              <InitialExpression>
+                &lt;CN=Root,Model=AMML,Vector=Values[lob_flow],Reference=InitialValue>
+              </InitialExpression>
+            </ModelParameter>
+          </ModelParameterGroup>
+          <ModelParameterGroup cn="CN=Root,Model=AMML,Vector=Reactions[L2toL3]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=AMML,Vector=Reactions[L2toL3],ParameterGroup=Parameters,Parameter=k1" value="4.9751243781094523" type="ReactionParameter" simulationType="assignment">
+              <InitialExpression>
+                &lt;CN=Root,Model=AMML,Vector=Values[lob_flow],Reference=InitialValue>
+              </InitialExpression>
+            </ModelParameter>
+          </ModelParameterGroup>
+          <ModelParameterGroup cn="CN=Root,Model=AMML,Vector=Reactions[CtoL1]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=AMML,Vector=Reactions[CtoL1],ParameterGroup=Parameters,Parameter=k1" value="0.10000000000000001" type="ReactionParameter" simulationType="assignment">
+              <InitialExpression>
+                &lt;CN=Root,Model=AMML,Vector=Values[Qha],Reference=InitialValue>
               </InitialExpression>
             </ModelParameter>
           </ModelParameterGroup>
@@ -386,15 +886,22 @@ Reaction scheme where the products are created from the reactants and the change
     </ListOfModelParameterSets>
     <StateTemplate>
       <StateTemplateVariable objectReference="Model_0"/>
+      <StateTemplateVariable objectReference="Compartment_4"/>
+      <StateTemplateVariable objectReference="Compartment_5"/>
       <StateTemplateVariable objectReference="Compartment_0"/>
       <StateTemplateVariable objectReference="Metabolite_0"/>
+      <StateTemplateVariable objectReference="Metabolite_5"/>
       <StateTemplateVariable objectReference="Metabolite_2"/>
       <StateTemplateVariable objectReference="Metabolite_1"/>
+      <StateTemplateVariable objectReference="Metabolite_4"/>
+      <StateTemplateVariable objectReference="Metabolite_6"/>
+      <StateTemplateVariable objectReference="Metabolite_3"/>
       <StateTemplateVariable objectReference="Compartment_1"/>
       <StateTemplateVariable objectReference="Compartment_2"/>
+      <StateTemplateVariable objectReference="Compartment_6"/>
+      <StateTemplateVariable objectReference="Compartment_3"/>
       <StateTemplateVariable objectReference="ModelValue_6"/>
-      <StateTemplateVariable objectReference="ModelValue_7"/>
-      <StateTemplateVariable objectReference="ModelValue_8"/>
+      <StateTemplateVariable objectReference="ModelValue_10"/>
       <StateTemplateVariable objectReference="ModelValue_0"/>
       <StateTemplateVariable objectReference="ModelValue_1"/>
       <StateTemplateVariable objectReference="ModelValue_2"/>
@@ -403,7 +910,7 @@ Reaction scheme where the products are created from the reactants and the change
       <StateTemplateVariable objectReference="ModelValue_5"/>
     </StateTemplate>
     <InitialState type="initialState">
-      0 1 0 3.0110704285000002e+21 0 1 1 23.333333333333329 4.9751243781094523 0.20000000000000001 0.46899999999999997 0.20100000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 
+      0 1 1 1 0 0 3.0110704285000002e+21 0 0 0 0 1 1 4.9751243781094523 0.10000000000000001 23.333333333333329 4.9751243781094523 0.46899999999999997 0.20100000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 
     </InitialState>
   </Model>
   <ListOfTasks>
@@ -758,32 +1265,50 @@ Reaction scheme where the products are created from the reactants and the change
       <Table printTitle="1">
         <Object cn="CN=Root,Model=AMML,Reference=Time"/>
         <Object cn="CN=Root,Model=AMML,Vector=Compartments[C],Vector=Metabolites[vCC],Reference=Concentration"/>
+        <Object cn="CN=Root,Model=AMML,Vector=Compartments[PV],Vector=Metabolites[vC_PV],Reference=Concentration"/>
         <Object cn="CN=Root,Model=AMML,Vector=Compartments[L1],Vector=Metabolites[vC_L1],Reference=Concentration"/>
+        <Object cn="CN=Root,Model=AMML,Vector=Compartments[L2],Vector=Metabolites[vC_L2],Reference=Concentration"/>
+        <Object cn="CN=Root,Model=AMML,Vector=Compartments[L3],Vector=Metabolites[vC_L3],Reference=Concentration"/>
+        <Object cn="CN=Root,Model=AMML,Vector=Compartments[CV],Vector=Metabolites[vC_CV],Reference=Concentration"/>
         <Object cn="CN=Root,Model=AMML,Vector=Compartments[CL],Vector=Metabolites[vCCL],Reference=Concentration"/>
       </Table>
     </Report>
   </ListOfReports>
   <GUI>
   </GUI>
-  <SBMLReference file="l1.xml">
+  <SBMLReference file="amml.xml">
     <SBMLMap SBMLid="C" COPASIkey="Compartment_1"/>
     <SBMLMap SBMLid="CL" COPASIkey="Compartment_2"/>
+    <SBMLMap SBMLid="CV" COPASIkey="Compartment_6"/>
     <SBMLMap SBMLid="Cr" COPASIkey="Reaction_2"/>
-    <SBMLMap SBMLid="CtoL1" COPASIkey="ModelValue_8"/>
+    <SBMLMap SBMLid="CtoL1" COPASIkey="Reaction_9"/>
+    <SBMLMap SBMLid="CtoPV" COPASIkey="Reaction_5"/>
     <SBMLMap SBMLid="Kpl" COPASIkey="ModelValue_2"/>
     <SBMLMap SBMLid="L1" COPASIkey="Compartment_0"/>
     <SBMLMap SBMLid="L1r" COPASIkey="Reaction_1"/>
-    <SBMLMap SBMLid="L1toC" COPASIkey="ModelValue_7"/>
+    <SBMLMap SBMLid="L1toL2" COPASIkey="Reaction_7"/>
+    <SBMLMap SBMLid="L2" COPASIkey="Compartment_4"/>
+    <SBMLMap SBMLid="L2toL3" COPASIkey="Reaction_8"/>
+    <SBMLMap SBMLid="L3" COPASIkey="Compartment_5"/>
+    <SBMLMap SBMLid="L3toCV" COPASIkey="Reaction_6"/>
+    <SBMLMap SBMLid="PV" COPASIkey="Compartment_3"/>
     <SBMLMap SBMLid="Qh" COPASIkey="ModelValue_3"/>
     <SBMLMap SBMLid="Qha" COPASIkey="ModelValue_4"/>
     <SBMLMap SBMLid="Qpv" COPASIkey="ModelValue_5"/>
     <SBMLMap SBMLid="SFkp" COPASIkey="ModelValue_1"/>
     <SBMLMap SBMLid="clear" COPASIkey="Reaction_0"/>
+    <SBMLMap SBMLid="clear_L2" COPASIkey="Reaction_3"/>
+    <SBMLMap SBMLid="clear_L3" COPASIkey="Reaction_4"/>
     <SBMLMap SBMLid="clearrate" COPASIkey="ModelValue_6"/>
     <SBMLMap SBMLid="fbCLint" COPASIkey="ModelValue_0"/>
+    <SBMLMap SBMLid="lob_flow" COPASIkey="ModelValue_10"/>
     <SBMLMap SBMLid="vCC" COPASIkey="Metabolite_2"/>
     <SBMLMap SBMLid="vCCL" COPASIkey="Metabolite_1"/>
+    <SBMLMap SBMLid="vC_CV" COPASIkey="Metabolite_6"/>
     <SBMLMap SBMLid="vC_L1" COPASIkey="Metabolite_0"/>
+    <SBMLMap SBMLid="vC_L2" COPASIkey="Metabolite_4"/>
+    <SBMLMap SBMLid="vC_L3" COPASIkey="Metabolite_5"/>
+    <SBMLMap SBMLid="vC_PV" COPASIkey="Metabolite_3"/>
   </SBMLReference>
   <ListOfUnitDefinitions>
     <UnitDefinition key="Unit_0" name="meter" symbol="m">
