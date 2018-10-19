@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE math PUBLIC "-//W3C//DTD MathML 2.0//EN" "http://www.w3.org/Math/DTD/mathml2/mathml2.dtd">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mtable>
+ <mtr>
+  <mtd>
+   <msub><mi>V</mi><mi>C</mi></msub>
+  </mtd>
+  <mtd>
+   <mo>=</mo>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+<mrow>
+<mi>Values[BV].InitialValue</mi>
+<mo>&CenterDot;</mo>
+<mfenced>
+<mrow>
+<mn>1</mn>
+<mo>-</mo>
+<mi>Values[LVf].InitialValue</mi>
+</mrow>
+</mfenced>
+</mrow>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <msub><mi>V</mi><mi>CL</mi></msub>
+  </mtd>
+  <mtd>
+   <mo>=</mo>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+<mn>1</mn>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mfrac>
+    <mrow>
+     <mo>d</mo>
+     <msub><mi>V</mi><mi>L2</mi></msub>
+    </mrow>
+   <mrow>
+  <mo>d</mo><mi>t</mi>
+ </mrow>
+</mfrac>
+  </mtd>
+  <mtd>
+   <mo>=</mo>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+<mi>clearrate</mi>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mfrac>
+    <mrow>
+     <mo>d</mo>
+     <msub><mi>V</mi><mi>L3</mi></msub>
+    </mrow>
+   <mrow>
+  <mo>d</mo><mi>t</mi>
+ </mrow>
+</mfrac>
+  </mtd>
+  <mtd>
+   <mo>=</mo>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+<mi>clearrate</mi>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <msub><mi>V</mi><mi>CV</mi></msub>
+  </mtd>
+  <mtd>
+   <mo>=</mo>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+<mfrac>
+<mrow>
+<mi>Values[BV].InitialValue</mi>
+<mo>&CenterDot;</mo>
+<mi>Values[LVf].InitialValue</mi>
+</mrow>
+<mn>5</mn>
+</mfrac>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mfrac>
+    <mrow>
+     <mo>d</mo>
+     <msub><mi>V</mi><mi>L1</mi></msub>
+    </mrow>
+   <mrow>
+  <mo>d</mo><mi>t</mi>
+ </mrow>
+</mfrac>
+  </mtd>
+  <mtd>
+   <mo>=</mo>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+<mi>clearrate</mi>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <msub><mi>V</mi><mi>PV</mi></msub>
+  </mtd>
+  <mtd>
+   <mo>=</mo>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+<mfrac>
+<mrow>
+<mi>Values[BV].InitialValue</mi>
+<mo>&CenterDot;</mo>
+<mi>Values[LVf].InitialValue</mi>
+</mrow>
+<mn>5</mn>
+</mfrac>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mfrac>
+    <mrow>
+     <mo>d</mo>
+     <mfenced>
+      <mrow>
+       <mi>[vC_L1]</mi>
+       <mo>&CenterDot;</mo>
+       <msub><mi>V</mi><mi>L1</mi></msub>
+      </mrow>
+     </mfenced>
+    </mrow>
+    <mrow>
+     <mo>d</mo><mi>t</mi>
+    </mrow>
+   </mfrac>
+  </mtd>
+  <mtd>
+   <mo>=</mo>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+    <mo>+</mo>
+    <mfenced>
+<mrow>
+<mi>Qha</mi>
+<mo>&CenterDot;</mo>
+<mi>[vCC]</mi>
+</mrow>
+    </mfenced>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+  </mtd>
+  <mtd>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+    <mo>-</mo>
+    <mfenced>
+<mrow>
+<mi>lob_flow</mi>
+<mo>&CenterDot;</mo>
+<mi>[vC_L1]</mi>
+</mrow>
+    </mfenced>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+  </mtd>
+  <mtd>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+    <mo>+</mo>
+    <mfenced>
+<mrow>
+<mi>Qpv</mi>
+<mo>&CenterDot;</mo>
+<mi>[vC_PV]</mi>
+</mrow>
+    </mfenced>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+  </mtd>
+  <mtd>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+    <mo>-</mo>
+    <mfenced>
+<mrow>
+<mi>clearrate</mi>
+<mo>&CenterDot;</mo>
+<mi>[vC_L1]</mi>
+</mrow>
+    </mfenced>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mfrac>
+    <mrow>
+     <mo>d</mo>
+     <mfenced>
+      <mrow>
+       <mi>[vCCL]</mi>
+       <mo>&CenterDot;</mo>
+       <msub><mi>V</mi><mi>CL</mi></msub>
+      </mrow>
+     </mfenced>
+    </mrow>
+    <mrow>
+     <mo>d</mo><mi>t</mi>
+    </mrow>
+   </mfrac>
+  </mtd>
+  <mtd>
+   <mo>=</mo>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+    <mo>+</mo>
+    <mfenced>
+<mrow>
+<mi>clearrate</mi>
+<mo>&CenterDot;</mo>
+<mi>[vC_L3]</mi>
+</mrow>
+    </mfenced>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+  </mtd>
+  <mtd>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+    <mo>+</mo>
+    <mfenced>
+<mrow>
+<mi>clearrate</mi>
+<mo>&CenterDot;</mo>
+<mi>[vC_L2]</mi>
+</mrow>
+    </mfenced>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+  </mtd>
+  <mtd>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+    <mo>+</mo>
+    <mfenced>
+<mrow>
+<mi>clearrate</mi>
+<mo>&CenterDot;</mo>
+<mi>[vC_L1]</mi>
+</mrow>
+    </mfenced>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mfrac>
+    <mrow>
+     <mo>d</mo>
+     <mfenced>
+      <mrow>
+       <mi>[vCC]</mi>
+       <mo>&CenterDot;</mo>
+       <msub><mi>V</mi><mi>C</mi></msub>
+      </mrow>
+     </mfenced>
+    </mrow>
+    <mrow>
+     <mo>d</mo><mi>t</mi>
+    </mrow>
+   </mfrac>
+  </mtd>
+  <mtd>
+   <mo>=</mo>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+    <mo>-</mo>
+    <mfenced>
+<mrow>
+<mi>Qha</mi>
+<mo>&CenterDot;</mo>
+<mi>[vCC]</mi>
+</mrow>
+    </mfenced>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+  </mtd>
+  <mtd>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+    <mo>-</mo>
+    <mfenced>
+<mrow>
+<mi>Qpv</mi>
+<mo>&CenterDot;</mo>
+<mi>[vCC]</mi>
+</mrow>
+    </mfenced>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+  </mtd>
+  <mtd>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+    <mo>+</mo>
+    <mfenced>
+<mrow>
+<mi>Qh</mi>
+<mo>&CenterDot;</mo>
+<mi>[vC_CV]</mi>
+</mrow>
+    </mfenced>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mfrac>
+    <mrow>
+     <mo>d</mo>
+     <mfenced>
+      <mrow>
+       <mi>[vC_PV]</mi>
+       <mo>&CenterDot;</mo>
+       <msub><mi>V</mi><mi>PV</mi></msub>
+      </mrow>
+     </mfenced>
+    </mrow>
+    <mrow>
+     <mo>d</mo><mi>t</mi>
+    </mrow>
+   </mfrac>
+  </mtd>
+  <mtd>
+   <mo>=</mo>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+    <mo>+</mo>
+    <mfenced>
+<mrow>
+<mi>Qpv</mi>
+<mo>&CenterDot;</mo>
+<mi>[vCC]</mi>
+</mrow>
+    </mfenced>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+  </mtd>
+  <mtd>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+    <mo>-</mo>
+    <mfenced>
+<mrow>
+<mi>Qpv</mi>
+<mo>&CenterDot;</mo>
+<mi>[vC_PV]</mi>
+</mrow>
+    </mfenced>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mfrac>
+    <mrow>
+     <mo>d</mo>
+     <mfenced>
+      <mrow>
+       <mi>[vC_L2]</mi>
+       <mo>&CenterDot;</mo>
+       <msub><mi>V</mi><mi>L2</mi></msub>
+      </mrow>
+     </mfenced>
+    </mrow>
+    <mrow>
+     <mo>d</mo><mi>t</mi>
+    </mrow>
+   </mfrac>
+  </mtd>
+  <mtd>
+   <mo>=</mo>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+    <mo>-</mo>
+    <mfenced>
+<mrow>
+<mi>lob_flow</mi>
+<mo>&CenterDot;</mo>
+<mi>[vC_L2]</mi>
+</mrow>
+    </mfenced>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+  </mtd>
+  <mtd>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+    <mo>+</mo>
+    <mfenced>
+<mrow>
+<mi>lob_flow</mi>
+<mo>&CenterDot;</mo>
+<mi>[vC_L1]</mi>
+</mrow>
+    </mfenced>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+  </mtd>
+  <mtd>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+    <mo>-</mo>
+    <mfenced>
+<mrow>
+<mi>clearrate</mi>
+<mo>&CenterDot;</mo>
+<mi>[vC_L2]</mi>
+</mrow>
+    </mfenced>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mfrac>
+    <mrow>
+     <mo>d</mo>
+     <mfenced>
+      <mrow>
+       <mi>[vC_L3]</mi>
+       <mo>&CenterDot;</mo>
+       <msub><mi>V</mi><mi>L3</mi></msub>
+      </mrow>
+     </mfenced>
+    </mrow>
+    <mrow>
+     <mo>d</mo><mi>t</mi>
+    </mrow>
+   </mfrac>
+  </mtd>
+  <mtd>
+   <mo>=</mo>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+    <mo>+</mo>
+    <mfenced>
+<mrow>
+<mi>lob_flow</mi>
+<mo>&CenterDot;</mo>
+<mi>[vC_L2]</mi>
+</mrow>
+    </mfenced>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+  </mtd>
+  <mtd>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+    <mo>-</mo>
+    <mfenced>
+<mrow>
+<mi>lob_flow</mi>
+<mo>&CenterDot;</mo>
+<mi>[vC_L3]</mi>
+</mrow>
+    </mfenced>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+  </mtd>
+  <mtd>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+    <mo>-</mo>
+    <mfenced>
+<mrow>
+<mi>clearrate</mi>
+<mo>&CenterDot;</mo>
+<mi>[vC_L3]</mi>
+</mrow>
+    </mfenced>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mfrac>
+    <mrow>
+     <mo>d</mo>
+     <mfenced>
+      <mrow>
+       <mi>[vC_CV]</mi>
+       <mo>&CenterDot;</mo>
+       <msub><mi>V</mi><mi>CV</mi></msub>
+      </mrow>
+     </mfenced>
+    </mrow>
+    <mrow>
+     <mo>d</mo><mi>t</mi>
+    </mrow>
+   </mfrac>
+  </mtd>
+  <mtd>
+   <mo>=</mo>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+    <mo>+</mo>
+    <mfenced>
+<mrow>
+<mi>lob_flow</mi>
+<mo>&CenterDot;</mo>
+<mi>[vC_L3]</mi>
+</mrow>
+    </mfenced>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+  </mtd>
+  <mtd>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+    <mo>-</mo>
+    <mfenced>
+<mrow>
+<mi>Qh</mi>
+<mo>&CenterDot;</mo>
+<mi>[vC_CV]</mi>
+</mrow>
+    </mfenced>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd columnalign='right'>
+   <mi>clearrate</mi>
+  </mtd>
+  <mtd>
+   <mo>=</mo>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+<mfrac>
+<mi>Values[fbCLint].InitialValue</mi>
+<mrow>
+<mi>Values[SFkp].InitialValue</mi>
+<mo>&CenterDot;</mo>
+<mi>Values[Kpl].InitialValue</mi>
+</mrow>
+</mfrac>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd columnalign='right'>
+   <mi>lob_flow</mi>
+  </mtd>
+  <mtd>
+   <mo>=</mo>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+<mfrac>
+<mi>Values[Qh].InitialValue</mi>
+<mrow>
+<mi>Values[SFkp].InitialValue</mi>
+<mo>&CenterDot;</mo>
+<mi>Values[Kpl].InitialValue</mi>
+</mrow>
+</mfrac>
+   </mrow>
+  </mtd>
+ </mtr>
+</mtable>
+</math>

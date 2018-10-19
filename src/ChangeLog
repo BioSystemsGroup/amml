@@ -1,3 +1,8 @@
+2018-10-19-12:33  gepr  <gepr@tempusdictum.com>
+
+	* amml.mml: Add the MathML exported equations.
+	* amml.[cps|xml]: Update model with (some) constants. Attempt to get the units correct.
+
 2018-10-05-12:29  gepr  <gepr@tempusdictum.com>
 
 	* amml.cps: Added PV, L2, L3, and CV compartments. Route Qpv flow from L1 to PV. Use common derived globals for clearance rates and flow rates.

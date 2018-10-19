@@ -2,6 +2,26 @@ AMM-L (Analogous Mechanism Model of a Lobule) coupled ODE
 
 The intention is to build a Lobule analog in a paradigm that is more likely to be better understood, criticized, and perhaps reused by the ADME community.  The proposal consists of 6 hypothetical reactor compartments in series, from PV→CV.  Each compartment should be mappable to a component of the ISLj Lobule analog.  The intra-Lobular compartments should map to dPV and dCV bands and both analogs should be tunable to match the other such that the whole analogs can be tested against referent data.
 
+Original equations taken from:
+
+  CPT Pharmacometrics Syst. Pharmacol. (2018) 7, 186–196 => https://www.ncbi.nlm.nih.gov/pubmed/29368402
+    Added to repository doc subdirectory.
+
+
+Constants:
+
+Slack PM
+
+tony [13:18]
+Feedback from Jeremiah: General values near the following (shown as 70 kg male/female, all in mL/min).  See Clin Pharmacokinet. 2006;45(10):1013-34.  Scaling based on body weight gives reasonable values for mice: avg. wt. = 20 g.
+QH: 1660/1620
+Qpv:  1235/1239
+Qha:  423/383
+
+Clin Pharmacokinet. 2006;45(10):1013-34 => https://www.ncbi.nlm.nih.gov/pubmed/16984214
+  Added to repository doc subdirectory.
+
+
 Tools:
 
 It would be best to write this in a tool compatable/callable from the ISLj to support replacability (e.g. running the ISLj replacing the whole Lobule with the AMML, including PV and CV, and/or replacing the intra-Lobular SSes, but preserving the PV and CV, etc.).
