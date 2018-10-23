@@ -21,6 +21,8 @@ Qha:  423/383
 Clin Pharmacokinet. 2006;45(10):1013-34 => https://www.ncbi.nlm.nih.gov/pubmed/16984214
   Added to repository doc subdirectory.
 
+For Kpl (liver partition coefficient for midazolam): 
+   uer-j-med-chem.2007 jun;42(6):743-51 => https://www.ncbi.nlm.nih.gov/pubmed/?term=17292513
 
 Tools:
 
