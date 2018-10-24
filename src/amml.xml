@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created by COPASI version 4.24 (Build 197) on 2018-10-23 10:07 with libSBML version 5.17.0. -->
+<!-- Created by COPASI version 4.24 (Build 197) on 2018-10-24 10:22 with libSBML version 5.17.0. -->
 <sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
   <model metaid="COPASI0" id="AMML" name="AMML">
     <annotation>
@@ -88,6 +88,13 @@
         <listOfUnits>
           <unit kind="mole" exponent="-1" scale="0" multiplier="1"/>
           <unit kind="gram" exponent="1" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="unit_4" name="liter/hour/kg">
+        <listOfUnits>
+          <unit kind="litre" exponent="1" scale="0" multiplier="1"/>
+          <unit kind="gram" exponent="-1" scale="3" multiplier="1"/>
+          <unit kind="second" exponent="-1" scale="2" multiplier="3600"/>
         </listOfUnits>
       </unitDefinition>
     </listOfUnitDefinitions>
@@ -317,10 +324,10 @@ molweight (g/mol)
       </species>
     </listOfSpecies>
     <listOfParameters>
-      <parameter metaid="COPASI15" id="fbCLint" name="fbCLint" value="550.0318" units="unit_0" constant="true">
+      <parameter metaid="COPASI15" id="fbCLint" name="fbCLint" value="4.24407219444444e-05" units="unit_0" constant="true">
         <notes>
           <body xmlns="http://www.w3.org/1999/xhtml">
-            <pre>0.469 L/h/kg * 1000 ml/L * 0.001 kg/g = 0.469 ml/h/g * 3600 s/h = 1688.4 ml/s/g * 325.771 g/mol = 550031.8 ml/s/mol * 0.001 mol/mmol = 550.032 ml/s/mmol</pre>
+            <pre>0.469 L/h/kg * 1000 ml/L * 0.001 kg/g = 0.469 ml/h/g / 3600 s/h = 1.302778e-4 ml/s/g * 325.771 g/mol = 4.244072e-2 ml/s/mol / 1000 mmol/mol = 4.244072e-5 ml/s/mmol</pre>
           </body>
         </notes>
         <annotation>
@@ -338,6 +345,11 @@ molweight (g/mol)
         </annotation>
       </parameter>
       <parameter metaid="COPASI16" id="SFkp" name="SFkp" value="0.201" constant="true">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <pre>0.201 (dimensionless) from cpt-pharmacometrics-syst-pharmacol-(2018)7,186-196</pre>
+          </body>
+        </notes>
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -353,6 +365,11 @@ molweight (g/mol)
         </annotation>
       </parameter>
       <parameter metaid="COPASI17" id="Kpl" name="Kpl" value="0.57" constant="true">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <pre>0.57: From uer-j-med-chem.2007 jun;42(6):743-51.pdf</pre>
+          </body>
+        </notes>
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -368,6 +385,11 @@ molweight (g/mol)
         </annotation>
       </parameter>
       <parameter metaid="COPASI18" id="Qh" name="Qh" value="27.6666666666667" units="unit_1" constant="true">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <pre>1660 ml/min from Clin Pharmacokinet. 2006;45(10):1013-34</pre>
+          </body>
+        </notes>
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -383,6 +405,11 @@ molweight (g/mol)
         </annotation>
       </parameter>
       <parameter metaid="COPASI19" id="Qha" name="Qha" value="7.05" units="unit_1" constant="true">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <pre>423 ml/min from Clin Pharmacokinet. 2006;45(10):1013-34</pre>
+          </body>
+        </notes>
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -398,6 +425,11 @@ molweight (g/mol)
         </annotation>
       </parameter>
       <parameter metaid="COPASI20" id="Qpv" name="Qpv" value="20.5833333333333" units="unit_1" constant="true">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <pre>1235 ml/min from Clin Pharmacokinet. 2006;45(10):1013-34</pre>
+          </body>
+        </notes>
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -412,7 +444,7 @@ molweight (g/mol)
           </COPASI>
         </annotation>
       </parameter>
-      <parameter metaid="COPASI21" id="clearrate" name="clearrate" value="4800.83617002706" units="unit_1" constant="false">
+      <parameter metaid="COPASI21" id="clearrate" name="clearrate" value="0.000370434860298895" units="unit_1" constant="false">
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -445,7 +477,8 @@ molweight (g/mol)
       <parameter metaid="COPASI23" id="LVf" name="LVf" value="0.333" constant="true">
         <notes>
           <body xmlns="http://www.w3.org/1999/xhtml">
-            <pre>Liver Volume fraction of Body/Blood Volume</pre>
+            <pre>(0.17 + 0.163) (dimensionless) taken from Table II of clin-pharmacokinet-2006\;45\(10\)\:1013-34
+Liver Volume fraction of Body/Blood Volume</pre>
           </body>
         </notes>
         <annotation>
@@ -465,7 +498,7 @@ molweight (g/mol)
       <parameter metaid="COPASI24" id="BV" name="BV" value="3833" units="unit_2" constant="true">
         <notes>
           <body xmlns="http://www.w3.org/1999/xhtml">
-            <pre>Body/Blood Volume</pre>
+            <pre>3833 ml Body/Blood Volume taken from Table VII in clin-pharmacokinet-2006\;45\(10\)\:1013-34</pre>
           </body>
         </notes>
         <annotation>
@@ -483,6 +516,11 @@ molweight (g/mol)
         </annotation>
       </parameter>
       <parameter metaid="COPASI25" id="MWm" name="MWm" value="325.771" units="unit_3" constant="true">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <pre>Molecular weight of midazolam.</pre>
+          </body>
+        </notes>
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -490,6 +528,26 @@ molweight (g/mol)
                 <dcterms:created>
                   <rdf:Description>
                     <dcterms:W3CDTF>2018-10-22T11:05:31Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </parameter>
+      <parameter metaid="COPASI26" id="fbCLint_asaumi" name="fbCLint_asaumi" value="0.469" units="unit_4" constant="true">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <pre>0.469 L/h/kg Taken from the midazolam entry in Table 1 cpt-pharmacokinetics-pharmacol-(2018)7.186-196.pdf</pre>
+          </body>
+        </notes>
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI26">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2018-10-24T08:49:11Z</dcterms:W3CDTF>
                   </rdf:Description>
                 </dcterms:created>
               </rdf:Description>
@@ -522,7 +580,7 @@ molweight (g/mol)
           <initialValue xmlns="http://copasi.org/initialValue" parent="SFkp"/>
         </annotation>
       </parameter>
-      <parameter id="ModelValue_0" name="Initial for fbCLint" value="550.0318">
+      <parameter id="ModelValue_0" name="Initial for fbCLint" value="4.24407219444444e-05">
         <annotation>
           <initialValue xmlns="http://copasi.org/initialValue" parent="fbCLint"/>
         </annotation>
@@ -535,6 +593,23 @@ molweight (g/mol)
             <divide/>
             <cn> 3 </cn>
             <ci> MWm </ci>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="fbCLint">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <divide/>
+            <apply>
+              <times/>
+              <apply>
+                <divide/>
+                <ci> fbCLint_asaumi </ci>
+                <cn> 3600 </cn>
+              </apply>
+              <ci> MWm </ci>
+            </apply>
+            <cn> 1000 </cn>
           </apply>
         </math>
       </initialAssignment>
@@ -684,11 +759,11 @@ molweight (g/mol)
       </rateRule>
     </listOfRules>
     <listOfReactions>
-      <reaction metaid="COPASI26" id="clear" name="clear_L1" reversible="false">
+      <reaction metaid="COPASI27" id="clear" name="clear_L1" reversible="false">
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI26">
+              <rdf:Description rdf:about="#COPASI27">
                 <dcterms:created>
                   <rdf:Description>
                     <dcterms:W3CDTF>2018-10-02T15:13:14Z</dcterms:W3CDTF>
@@ -718,11 +793,11 @@ molweight (g/mol)
           </math>
         </kineticLaw>
       </reaction>
-      <reaction metaid="COPASI27" id="L1r" name="PVtoL1" reversible="false">
+      <reaction metaid="COPASI28" id="L1r" name="PVtoL1" reversible="false">
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI27">
+              <rdf:Description rdf:about="#COPASI28">
                 <dcterms:created>
                   <rdf:Description>
                     <dcterms:W3CDTF>2018-10-02T16:47:09Z</dcterms:W3CDTF>
@@ -752,11 +827,11 @@ molweight (g/mol)
           </math>
         </kineticLaw>
       </reaction>
-      <reaction metaid="COPASI28" id="Cr" name="CVtoC" reversible="false">
+      <reaction metaid="COPASI29" id="Cr" name="CVtoC" reversible="false">
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI28">
+              <rdf:Description rdf:about="#COPASI29">
                 <dcterms:created>
                   <rdf:Description>
                     <dcterms:W3CDTF>2018-10-02T16:44:21Z</dcterms:W3CDTF>
@@ -786,11 +861,11 @@ molweight (g/mol)
           </math>
         </kineticLaw>
       </reaction>
-      <reaction metaid="COPASI29" id="clear_L2" name="clear_L2" reversible="false">
+      <reaction metaid="COPASI30" id="clear_L2" name="clear_L2" reversible="false">
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI29">
+              <rdf:Description rdf:about="#COPASI30">
                 <dcterms:created>
                   <rdf:Description>
                     <dcterms:W3CDTF>2018-10-05T10:10:18Z</dcterms:W3CDTF>
@@ -820,11 +895,11 @@ molweight (g/mol)
           </math>
         </kineticLaw>
       </reaction>
-      <reaction metaid="COPASI30" id="clear_L3" name="clear_L3" reversible="false">
+      <reaction metaid="COPASI31" id="clear_L3" name="clear_L3" reversible="false">
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI30">
+              <rdf:Description rdf:about="#COPASI31">
                 <dcterms:created>
                   <rdf:Description>
                     <dcterms:W3CDTF>2018-10-05T10:10:13Z</dcterms:W3CDTF>
@@ -854,11 +929,11 @@ molweight (g/mol)
           </math>
         </kineticLaw>
       </reaction>
-      <reaction metaid="COPASI31" id="CtoPV" name="CtoPV" reversible="false">
+      <reaction metaid="COPASI32" id="CtoPV" name="CtoPV" reversible="false">
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI31">
+              <rdf:Description rdf:about="#COPASI32">
                 <dcterms:created>
                   <rdf:Description>
                     <dcterms:W3CDTF>2018-10-05T10:01:53Z</dcterms:W3CDTF>
@@ -888,11 +963,11 @@ molweight (g/mol)
           </math>
         </kineticLaw>
       </reaction>
-      <reaction metaid="COPASI32" id="L3toCV" name="L3toCV" reversible="false">
+      <reaction metaid="COPASI33" id="L3toCV" name="L3toCV" reversible="false">
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI32">
+              <rdf:Description rdf:about="#COPASI33">
                 <dcterms:created>
                   <rdf:Description>
                     <dcterms:W3CDTF>2018-10-05T10:02:53Z</dcterms:W3CDTF>
@@ -922,11 +997,11 @@ molweight (g/mol)
           </math>
         </kineticLaw>
       </reaction>
-      <reaction metaid="COPASI33" id="L1toL2" name="L1toL2" reversible="false">
+      <reaction metaid="COPASI34" id="L1toL2" name="L1toL2" reversible="false">
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI33">
+              <rdf:Description rdf:about="#COPASI34">
                 <dcterms:created>
                   <rdf:Description>
                     <dcterms:W3CDTF>2018-10-05T10:26:58Z</dcterms:W3CDTF>
@@ -956,11 +1031,11 @@ molweight (g/mol)
           </math>
         </kineticLaw>
       </reaction>
-      <reaction metaid="COPASI34" id="L2toL3" name="L2toL3" reversible="false">
+      <reaction metaid="COPASI35" id="L2toL3" name="L2toL3" reversible="false">
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI34">
+              <rdf:Description rdf:about="#COPASI35">
                 <dcterms:created>
                   <rdf:Description>
                     <dcterms:W3CDTF>2018-10-05T10:27:05Z</dcterms:W3CDTF>
@@ -990,11 +1065,11 @@ molweight (g/mol)
           </math>
         </kineticLaw>
       </reaction>
-      <reaction metaid="COPASI35" id="CtoL1" name="CtoL1" reversible="false">
+      <reaction metaid="COPASI36" id="CtoL1" name="CtoL1" reversible="false">
         <annotation>
           <COPASI xmlns="http://www.copasi.org/static/sbml">
             <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-              <rdf:Description rdf:about="#COPASI35">
+              <rdf:Description rdf:about="#COPASI36">
                 <dcterms:created>
                   <rdf:Description>
                     <dcterms:W3CDTF>2018-10-05T10:36:20Z</dcterms:W3CDTF>
